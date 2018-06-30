@@ -16,7 +16,7 @@ def BFS(adj, dist, parent, color, source):
                 color[v] = 'gray' # Mark it as an 'active' vertex
                 dist[v] = dist[u] + 1 # It should be one edge farther from u
                 parent[v] = u # And the vertex that led us to v is u.
-                print('Discovered {}, distance to {} is {}, parent is {}.'.format(v, u, dist[v], parent[v]))
+                print('Discovered {}, distance to {} is {}, parent is {}.'.format(v, source, dist[v], parent[v]))
                 Q.append(v) # Enqueue v to check its neighbors once we're done with this tier.
         color[u] = 'black' # Once we've checked all of u's neighbors, it's now both discovered and inactive.
     print('Graph explored.')
