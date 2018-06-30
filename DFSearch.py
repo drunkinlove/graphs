@@ -7,7 +7,7 @@ def DFS(adj, disc, parent, color, finish):
     for v in adj.keys():
         if color[v] == 'white':
             DFSVisit(adj, disc, parent, color, finish, v)
-            # Found an undiscovered vertex! It'll become the root of a new BFS tree.
+            # Found an undiscovered vertex! It'll become the root of a new DFS tree.
     print('Graph explored.')
 
 def DFSVisit(adj, disc, parent, color, finish, v):
