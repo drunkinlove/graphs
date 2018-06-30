@@ -31,7 +31,7 @@ def main():
          'F': ['C', 'E']}
     dist = {x: None for x in adj.keys()}
     parent = dist.copy()
-    color = dist.copy
+    color = dist.copy()
     BFS(adj, dist, parent, color, 'B')
     input()
 
