@@ -22,7 +22,7 @@ def DFSVisit(adj, disc, parent, color, finish, v):
             parent[u] = v # v was the vertex that led us to u.
             print('Exploring edge ({}, {}).'.format(v, u))
             DFSVisit(adj, disc, parent, color, finish, u) # Let's focus on u and try to dig deeper.
-    color[v] = 'black' # We're done with v...
+    color[v] = 'black' # We're done with v.
     time += 1 # Global time is ticking again...
     finish[v] = time # Recording time of having finished with v.
     print('Finished with {} at time {}.'.format(v, time))
